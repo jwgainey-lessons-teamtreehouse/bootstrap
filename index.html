@@ -268,19 +268,75 @@
 <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header bg-info text-white">
         <h5 class="modal-title" id="exampleModalLabel">Sign Up for Full Stack Con</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        (form Goes Here)
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+        <!--Registration Form-->
+        <form>
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Hurry!</strong> Early bird registration ends in 2 days!
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+          <h5 class="mb-4">Basic Info</h5>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+            <div class"form-group">
+              <select class="custom-select form-control" id="role">
+                <option value="full stack js developer">Full Stack JavaScript Developer</option>
+                <option value="front end developer">Front End Developer</option>
+                <option value="back end developer">Back End Developer</option>
+                <option value="designer">Designer</option>
+                <option value="student">Student</option> 
+              </select>
+            </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+            <hr class="my-4">
+            <h5 class="mb-4">Which Topics Intrest You Most?</h5>
+              <div class="form-check">
+              <label class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-label" for="customCheck1">JavaScript Frameworks</span>
+              </div>
+              <div class="form-check">
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-label" for="customCheck1">JavaScript Libraries</span>
+                </div>
+                <div class="form-check">
+                  <label class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-label" for="customCheck1">Node.js</span>
+                  </div>
+                  <div class="form-check">
+                    <label class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <span class="custom-control-indicator"></span>
+                      <span class="custom-control-label" for="customCheck1">Build Tools</span>
+                    </div>
+                    <div class="form-check">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-label" for="customCheck1">ES2015</span>
+                      </div>
+          </form><!--/Registration Form-->
+      </div>  
     </div>
   </div>
 </div>
